@@ -1,0 +1,9 @@
+digraph G {
+  rankdir=LR;
+  "a" -> "s" [label="cap=5, cost=-2"];
+  "a" -> "b" [label="cap=4, cost=1"];
+  "a" -> "t" [label="cap=3, cost=3"];
+  "b" -> "s" [label="cap=10, cost=-4"];
+  "t" -> "a" [label="cap=5, cost=-3"];
+  "t" -> "b" [label="cap=10, cost=-1"];
+}

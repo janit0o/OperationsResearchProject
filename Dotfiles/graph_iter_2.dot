@@ -1,0 +1,24 @@
+digraph G {
+  rankdir=LR;
+  splines=polyline;
+  nodesep=1.0;
+  ranksep=1.0;
+  node [shape=circle, width=0.5, height=0.5, fixedsize=true];
+  { rank=source; 0; }
+  { rank=sink; 6; }
+  "0" -> "1" [label="cap: 6, cᵣ: 0", color=black];
+  "1" -> "0" [label="cap: 10, cᵣ: 0", color=blue, style=dashed];
+  "0" -> "3" [label="cap: 7, cᵣ: 0", color=black];
+  "3" -> "0" [label="cap: 6, cᵣ: 0", color=blue, style=dashed];
+  "1" -> "2" [label="cap: 5, cᵣ: 4", color=black];
+  "4" -> "1" [label="cap: 10, cᵣ: 0", color=blue, style=dashed];
+  "2" -> "3" [label="cap: 5, cᵣ: 118", color=black];
+  "2" -> "4" [label="cap: 8, cᵣ: 30", color=black];
+  "3" -> "7" [label="cap: 10, cᵣ: 0", color=black];
+  "3" -> "5" [label="cap: 9, cᵣ: 0", color=black];
+  "5" -> "3" [label="cap: 6, cᵣ: 0", color=blue, style=dashed];
+  "4" -> "6" [label="cap: 15, cᵣ: 0", color=black];
+  "6" -> "4" [label="cap: 10, cᵣ: 0", color=blue, style=dashed];
+  "6" -> "5" [label="cap: 6, cᵣ: 21", color=blue, style=dashed];
+  "7" -> "2" [label="cap: 10, cᵣ: 0", color=black];
+}

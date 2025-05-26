@@ -1,0 +1,20 @@
+digraph G {
+  rankdir=LR;
+  splines=polyline;
+  nodesep=1.0;
+  ranksep=1.0;
+  node [shape=circle, width=0.5, height=0.5, fixedsize=true];
+  { rank=source; 0; }
+  { rank=sink; 6; }
+  "0" -> "1" [label="cap: 16, cost: 58", color=black];
+  "0" -> "3" [label="cap: 13, cost: 40", color=black];
+  "1" -> "2" [label="cap: 5, cost: 46", color=black];
+  "1" -> "4" [label="cap: 10, cost: 45", color=black];
+  "2" -> "3" [label="cap: 5, cost: 58", color=black];
+  "2" -> "4" [label="cap: 8, cost: 33", color=black];
+  "3" -> "7" [label="cap: 10, cost: 60", color=black];
+  "3" -> "5" [label="cap: 15, cost: 46", color=black];
+  "4" -> "6" [label="cap: 25, cost: 72", color=black];
+  "5" -> "6" [label="cap: 6, cost: 68", color=black];
+  "7" -> "2" [label="cap: 10, cost: 0", color=black];
+}

@@ -1,0 +1,13 @@
+digraph G {
+    // Knoten
+    A [label="Start"];
+    B [label="Zwischenschritt"];
+    C [label="Ende"];
+
+    // Kanten
+    A -> B [label="Schritt 1"];
+    B -> C [label="Schritt 2"];
+}
+
+
+#dot -Tpng test.dot -o test.png
